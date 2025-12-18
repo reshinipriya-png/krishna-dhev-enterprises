@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Krishna Dhev Enterprises</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e8f5e9;
+            color: #2e4d2c;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+            color: #1b5e20;
+        }
+
+        .header-buttons {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .header-buttons button {
+            background: none;
+            border: 1px solid #2e7d32;
+            color: #2e7d32;
+            padding: 6px 12px;
+            margin-left: 8px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .header-buttons button:hover {
+            background-color: #2e7d32;
+            color: white;
+        }
+
+        .hidden-box {
+            display: none;
+            background-color: #f1f8e9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Krishna Dhev Enterprises</h1>
+
+        <div class="header-buttons">
+            <button onclick="showAddress()">Address</button>
+            <button onclick="showContact()">Contact</button>
+        </div>
+    </header>
+
+    <div id="addressBox" class="hidden-box">
+        <h3>Address</h3>
+        <p>
+            117, Kavara Street,<br>
+            Kalathur Post,<br>
+            Pattukkottai Taluk,<br>
+            Thanjavur District.<br>
+            Pin - 614804
+        </p>
+    </div>
+
+    <div id="contactBox" class="hidden-box">
+        <h3>Contact Details</h3>
+        <p><strong>Mobile:</strong> +91 9789242216</p>
+        <p><strong>Email:</strong> krishnadheven@gmail.com</p>
+    </div>
+
+    <div class="intro">
+        Supplying quality agriculture products with trust and reliability.
+    </div>
+
+</div>
+
+<script>
+    function showAddress() {
+        document.getElementById("addressBox").style.display = "block";
+        document.getElementById("contactBox").style.display = "none";
+    }
+
+    function showContact() {
+        document.getElementById("contactBox").style.display = "block";
+        document.getElementById("addressBox").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
